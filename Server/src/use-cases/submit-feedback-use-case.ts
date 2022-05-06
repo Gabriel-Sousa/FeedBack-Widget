@@ -40,8 +40,7 @@ export class SubmitFeedbackUseCase {
                 `<div style="font-family: sans-serif; font-size:16px; color: #111">`,
                 `<p>Tipo do feedback: ${type}</p>`,
                 `<p>Comentário: ${comment}</p>`,
-                screenshot != "data:image/png;base64, null"?
-                `<img src="${screenshot}"></img>`:"",
+                screenshot ? `<img src="${screenshot}"/>`: null,
                 
                     
 
